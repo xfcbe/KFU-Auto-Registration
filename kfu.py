@@ -5,7 +5,7 @@ from colorama import Fore
 i = 0
 crn = []
 corses = int(input('how many courses do you have: '))
-for x in corses:
+for x in range(corses):
 	crn_codes= input('Enter the crn code for the course number '+ str(x+1)+': ')
 	crn.append(crn_codes)
 
@@ -48,7 +48,7 @@ if __name__ == '__main__':
 	button4 = driver.find_element_by_id("bmenu--P_RegMnu___UID0").click()
 	button5 = driver.find_element_by_id("contentItem11").click()
 	
-	for crn_number in corses:
+	for crn_number in crn:
 		inputElement3 = driver.find_element_by_id("")
 		inputElement3.send_keys(crn_number)
 		inputElement3.send_keys(Keys.ENTER)

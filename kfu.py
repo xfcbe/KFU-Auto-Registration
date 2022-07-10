@@ -5,7 +5,7 @@ from colorama import Fore
 i = 0
 crn = []
 corses = int(input('how many courses do you have: '))
-for x in range(corses):
+for x in corses:
 	crn_codes= input('Enter the crn code for the course number '+ str(x+1)+': ')
 	crn.append(crn_codes)
 

@@ -6,14 +6,14 @@ i = 0
 crn = []
 corses = int(input('how many courses do you have: '))
 for x in range(corses):
-	crn_codes= input('Enter the crn code for the course number '+ str(x+1)+': ')
+	crn_codes= input('Enter CRN code for the course number '+ str(x+1)+': ')
 	crn.append(crn_codes)
 
-username= input(Fore.RED+'Enter your student id ')
+username= input(Fore.RED+'Enter your student ID ')
 password= input(Fore.RED+'Enter your password ')
-check = input(Fore.GREEN+"do you have a veryfi key? (y\n) ")
+check = input(Fore.GREEN+"do you have a verify key? (y\n) ")
 if (check == "y"):
-	verify = input(Fore.GREEN+'Enter the verify code: ')
+	verify = input(Fore.GREEN+'Enter the verification code: ')
 	i=i+1
 else:
 	pass
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 	if (i==1):
 		pass
 	else:
-		verify = input("Enter the code you receve in your phone: ")
+		verify = input("Enter the code you have received on your phone: ")
 	inputElement2 = driver.find_element_by_name("VerC")
 	inputElement2.send_keys(verify)
 	inputElement2.send_keys(Keys.ENTER)

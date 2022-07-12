@@ -53,4 +53,12 @@ if __name__ == '__main__':
 		inputElement3.send_keys(crn_number)
 		inputElement3.send_keys(Keys.ENTER)
 		print(crn_number+" -----> "+Fore.GREEN+"Done")
-	print("------------Done------------")
+		
+	if check2=='y':
+		button6 = driver.find_element_by_id("").click()
+		button7 = driver.find_element_by_id("").click()
+		time.sleep(3)
+		driver.save_screenshot('New-Schedule.png')
+		driver.quit()
+	else:
+		driver.quit()

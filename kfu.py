@@ -54,6 +54,8 @@ if __name__ == '__main__':
 		inputElement3.send_keys(Keys.ENTER)
 		print(crn_number+" -----> "+Fore.GREEN+"Done")
 		
+	check2 = input("do you want to check your regstration status? y/n")
+	
 	if check2=='y':
 		button6 = driver.find_element_by_id("").click()
 		button7 = driver.find_element_by_id("").click()

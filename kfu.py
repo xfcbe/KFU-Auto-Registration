@@ -57,19 +57,20 @@ try:
 	element1.click()
 except:
 	driver.quit()
+z=0
 while True:
 	try:
 		select = Select(driver.find_element(By.ID,'term_id'))
 		select.select_by_index(1)
 		driver.find_element(By.ID,"id____UID6").click()
 		for crn_number in crn:
-			if crn_number==5:
+			if z==5:
 				driver.find_element(By.ID,"id____UID4").click()
 			else:
 				pass
-			inputElement3 = driver.find_element(By.ID,f"crn_id{crn_number+1}")
+			inputElement3 = driver.find_element(By.ID,f"crn_id{z+1}")
 			inputElement3.send_keys(crn_number)
-			crn_number+=1
+			z+=1
 			print(crn_number+" -----> "+Fore.GREEN+"Done")
 		driver.find_element(By.ID,"id____UID4").click()
 		break

@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import random
-				#python -m PyInstaller myscript.py
+				
 i = 0
 crn = []
 corses = int(input('how many courses do you have: '))
